@@ -26,6 +26,7 @@ public class Person {
     }
 
     public Person(String name,Integer age) {
+        System.out.println("创建person");
         this.name = name;
         this.age = age;
     }

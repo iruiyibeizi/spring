@@ -34,4 +34,38 @@ public class IOCTest {
             System.out.println(s);
         }
     }
+    @Test
+    public void lazy(){
+        AnnotationConfigApplicationContext mainConfig = new AnnotationConfigApplicationContext(MainConfig.class);
+        String[] beanDefinitionNames = mainConfig.getBeanDefinitionNames();
+        for(String s :beanDefinitionNames){
+            System.out.println(s);
+        }
+        Person bean = mainConfig.getBean(Person.class);
+        for(String s :beanDefinitionNames){
+            System.out.println(s);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

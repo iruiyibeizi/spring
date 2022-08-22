@@ -2,12 +2,15 @@ package zlx.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.core.type.AnnotatedTypeMetadata;
+import zlx.bean.Color;
 import zlx.bean.Person;
+import zlx.bean.Red;
 
 @Configuration
 @ComponentScan(value ="zlx",
     includeFilters ={//@ComponentScan.Filter(type= FilterType.ANNOTATION,classes = {Controller.class}),
 @ComponentScan.Filter(type = FilterType.CUSTOM,classes = {MyTypeFilter.class})},useDefaultFilters = false)
+@Import({Color.class, Red.class,MyImportSelector.class})
 public class MainConfig2 {
     //@Lazy
     @Conditional({WindowsCondition.class})
