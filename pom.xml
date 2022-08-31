@@ -55,6 +55,20 @@
       <artifactId>spring-expression</artifactId>
       <version>4.3.12.RELEASE</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aspects</artifactId>
+      <version>4.3.12.RELEASE</version>
+    </dependency>
+
+
 
 
   </dependencies>

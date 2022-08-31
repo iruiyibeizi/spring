@@ -1,7 +1,11 @@
 package zlx.bean;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Person {
+    @Value("${person.nickName}")
     private String name;
+    @Value("#{20-2}")
     private Integer age;
 
     public String getName() {

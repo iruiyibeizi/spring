@@ -12,7 +12,7 @@ public class MyTypeFilter implements TypeFilter {
         throws IOException {
         String className = metadataReader.getClassMetadata().getClassName();
         System.out.println(className);
-        if(className.contains("er")){
+        if(className.contains("MyBean")){
             return true;
         }
         return false;
