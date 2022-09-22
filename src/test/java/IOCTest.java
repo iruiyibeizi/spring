@@ -27,12 +27,18 @@ public class IOCTest {
 
     @Test
     public void Score(){
-        AnnotationConfigApplicationContext mainConfig = new AnnotationConfigApplicationContext(MainConfig2.class);
+        AnnotationConfigApplicationContext mainConfig = new AnnotationConfigApplicationContext(MainConfig.class);
         System.out.println("创建容器");
-        String[] beanNamesForType = mainConfig.getBeanNamesForType(Person.class);
-        for (String s:beanNamesForType){
+        String[] beanDefinitionNames = mainConfig.getBeanDefinitionNames();
+        for(String s:beanDefinitionNames){
             System.out.println(s);
         }
+        System.out.println("--------------");
+        Person bean = mainConfig.getBean(Person.class);
+        for(String s:beanDefinitionNames){
+            System.out.println(s);
+        }
+
     }
     @Test
     public void lazy(){
