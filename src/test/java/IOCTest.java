@@ -53,7 +53,10 @@ public class IOCTest {
         }
     }
 
-
+    public void test(){
+        System.out.println("zlxtest赵立信");
+        System.out.println("zlx");
+    }
 
 
 
