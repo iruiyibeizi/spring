@@ -20,6 +20,7 @@ public class aopTest {
         String[] beanDefinitionNames = mainConfig.getBeanDefinitionNames();
         for(String s:beanDefinitionNames){
             System.out.println(s);
+
         }
 
 
@@ -30,6 +31,7 @@ public class aopTest {
         String[] beanDefinitionNames = mainConfig.getBeanDefinitionNames();
         for(String s:beanDefinitionNames){
             System.out.println(s);
+
         }
     }
 
