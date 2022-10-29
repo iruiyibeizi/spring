@@ -9,12 +9,8 @@ public class BookService {
     @Autowired
     private testService testService1;
     @Autowired
-    private BookDao bookdao2;
+    private BookDao bookdao;
 
-    @Override
-    public String toString() {
-        return "BookService{" + "bookDao=" + bookdao2 + '}';
-    }
 
     public void f1(){
         System.out.println("f1");
